@@ -184,6 +184,10 @@
     return [[self attributeByType:DH_ATTRIBUTE_TYPE_ORIGINAL_APPLICATION_VERSION] stringValue];
 }
 
+- (NSDate *)creationDate {
+    return [[self attributeByType:DH_ATTRIBUTE_TYPE_RECEIPT_CREATION_DATE] dateValue];
+}
+
 @end
 
 @implementation DHInAppReceipt
